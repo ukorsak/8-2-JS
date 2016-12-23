@@ -25,3 +25,19 @@ function countTriangleArea() {
 	alert('Pole trójkąta o podstawie a: ' + a + ' i wysokości h: ' + h + ' wynosi: ' + triangleArea);
 	console.log('Pole trójkąta o podstawie a: ' + a + ' i wysokości h: ' + h + ' wynosi: ' + triangleArea);
 }
+
+/* Zadanie 8.5 */
+function checkResult() {
+	var a,b;
+	a = (Math.floor(Math.random()*200)-100);
+	b = (Math.floor(Math.random()*200)-100);
+	var value = (a*a) + (2 * a * b) - (b*b);
+	console.log('a: ' + a + ' i b: ' + b  + ', wynik: ' + value);
+	if (value > 0) {
+		console.log('Wynik jest dodatni'); 
+	} else if (value < 0) {
+		console.log('Wynik jest ujemny'); 
+	} else {
+		console.log('Wynik jest równy zero'); 
+	}
+}
