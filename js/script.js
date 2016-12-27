@@ -1,8 +1,8 @@
 // plik scripts.js
 /* Zadanie 8.2 */
-var name = prompt('Wpisz swoje imię');
+/*var name = prompt('Wpisz swoje imię');
 alert('Witaj, ' + name);
-console.log('Witaj, ' + name);
+console.log('Witaj, ' + name);*/
 
 /* Zadanie 8.4 */
 function countTriangleArea() {
@@ -40,4 +40,18 @@ function checkResult() {
 	} else {
 		console.log('Wynik jest równy zero'); 
 	}
+}
+
+/* Zadanie 8.6 */
+function getTriangleArea(a, h) {
+	return (a > 0 && h > 0) ? ((a*h)/2) : 'Nieprawidłowe dane';
+}
+
+var a,h,triangleArea;
+console.log(getTriangleArea(10,6));
+for (i = 0; i < 3; i++) { 
+    a = (Math.floor(Math.random()*100)+1);
+	h = (Math.floor(Math.random()*100)+1);
+	triangleArea = getTriangleArea(a, h);
+	console.log('Pole trójkąta o podstawie a: ' + a + ' i wysokości h: ' + h + ' wynosi: ' + triangleArea);
 }
