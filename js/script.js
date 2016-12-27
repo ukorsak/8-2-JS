@@ -82,3 +82,30 @@ var text = "Papugi koszą trawę, unosząc się nad ziemią 15 centymetrów, na 
 var animal = text.replace('Papugi', 'Zielone słonie').toUpperCase();
 text = text.replace('Papugi', animal.substr(0, 14));
 console.log(text.substr(0, text.length/2));
+
+/* Zadanie 8.9 */
+console.log('ZADANIE 8.9');
+function rysujChoinke(a) {
+	var star='';
+	var b,c;
+	for(i=0;i<a;i++){
+		b=a-i;
+		c=(i+1)*2-1;
+		for(j=0;j<c;j++){
+			star+='*';
+		}
+		while(b!=0){
+			star=" "+star+" ";
+			b--;
+		}
+		console.log(star);
+		star='';
+	}
+	star="| |"
+	while(a!=1){
+		star=" "+star+" ";
+		a--;
+	}
+	console.log(star);
+}
+rysujChoinke(5);
