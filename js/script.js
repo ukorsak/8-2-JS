@@ -6,6 +6,7 @@ console.log('Witaj, ' + name);*/
 
 /* Zadanie 8.4 */
 function countTriangleArea() {
+	console.log('ZADANIE 8.4');
 	var a,h,triangleArea;
 	var choice = prompt(name + ' czy chcesz sam podać wysokość i podstawę trójkota?? (tak/nie)');
 	if (choice == 'tak') {
@@ -28,6 +29,7 @@ function countTriangleArea() {
 
 /* Zadanie 8.5 */
 function checkResult() {
+	console.log('ZADANIE 8.5');
 	var a,b;
 	a = (Math.floor(Math.random()*200)-100);
 	b = (Math.floor(Math.random()*200)-100);
@@ -43,6 +45,7 @@ function checkResult() {
 }
 
 /* Zadanie 8.6 */
+console.log('ZADANIE 8.6');
 function getTriangleArea(a, h) {
 	return (a > 0 && h > 0) ? ((a*h)/2) : 'Nieprawidłowe dane';
 }
@@ -57,6 +60,7 @@ for (i = 0; i < 3; i++) {
 }
 
 /* Zadanie 8.7 */
+console.log('ZADANIE 8.7');
 var womensNames = ['Ola', 'Kasia', 'Zofia', 'Beata', 'Iza'];
 var mensNames = ['Jan', 'Mikołaj', 'Adam', 'Arek', 'Robert'];
 var allNames = womensNames.concat(mensNames);
@@ -71,3 +75,10 @@ if (allNames.indexOf(newName) == -1) {
 	allNames.push(newName);	
 }
 console.log(allNames);
+
+/* Zadanie 8.8 */
+console.log('ZADANIE 8.8');
+var text = "Papugi koszą trawę, unosząc się nad ziemią 15 centymetrów, na czerwonych dywanach.";
+var animal = text.replace('Papugi', 'Zielone słonie').toUpperCase();
+text = text.replace('Papugi', animal.substr(0, 14));
+console.log(text.substr(0, text.length/2));
