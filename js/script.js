@@ -55,3 +55,19 @@ for (i = 0; i < 3; i++) {
 	triangleArea = getTriangleArea(a, h);
 	console.log('Pole trójkąta o podstawie a: ' + a + ' i wysokości h: ' + h + ' wynosi: ' + triangleArea);
 }
+
+/* Zadanie 8.7 */
+var womensNames = ['Ola', 'Kasia', 'Zofia', 'Beata', 'Iza'];
+var mensNames = ['Jan', 'Mikołaj', 'Adam', 'Arek', 'Robert'];
+var allNames = womensNames.concat(mensNames);
+var newNames = ['Asia', 'Kasia', 'Ola', 'Sylwia', 'Ania', 'Tadeusz', 'Arek', 'Ola', 'Jan', 'Andrzej'];
+newNames.filter(function(name) {
+	if (allNames.indexOf(name) == -1) {
+		allNames.push(name);	
+	}
+});
+var newName = "Marian";
+if (allNames.indexOf(newName) == -1) {
+	allNames.push(newName);	
+}
+console.log(allNames);
