@@ -109,3 +109,15 @@ function rysujChoinke(a) {
 	console.log(star);
 }
 rysujChoinke(5);
+
+/* Zadanie 8.11 */
+function checkOnclickEvent(param) {
+  	console.log(param);
+}
+
+var addElem = document.getElementById('js-addElem');
+var navigation = document.getElementById('Lista');
+
+addElem.addEventListener('click', function(e) {
+  	navigation.innerHTML += '<li>item '+navigation.getElementsByTagName('li').length+'</li>';
+});
