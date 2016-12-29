@@ -4,7 +4,7 @@
 alert('Witaj, ' + name);
 console.log('Witaj, ' + name);*/
 
-/* Zadanie 8.4 */
+/* Task 8.4 */
 function countTriangleArea() {
 	console.log('ZADANIE 8.4');
 	var a,h,triangleArea;
@@ -27,7 +27,7 @@ function countTriangleArea() {
 	console.log('Pole trójkąta o podstawie a: ' + a + ' i wysokości h: ' + h + ' wynosi: ' + triangleArea);
 }
 
-/* Zadanie 8.5 */
+/* Task 8.5 */
 function checkResult() {
 	console.log('ZADANIE 8.5');
 	var a,b;
@@ -44,7 +44,7 @@ function checkResult() {
 	}
 }
 
-/* Zadanie 8.6 */
+/* Task 8.6 */
 console.log('ZADANIE 8.6');
 function getTriangleArea(a, h) {
 	return (a > 0 && h > 0) ? ((a*h)/2) : 'Nieprawidłowe dane';
@@ -59,7 +59,7 @@ for (i = 0; i < 3; i++) {
 	console.log('Pole trójkąta o podstawie a: ' + a + ' i wysokości h: ' + h + ' wynosi: ' + triangleArea);
 }
 
-/* Zadanie 8.7 */
+/* Task 8.7 */
 console.log('ZADANIE 8.7');
 var womensNames = ['Ola', 'Kasia', 'Zofia', 'Beata', 'Iza'];
 var mensNames = ['Jan', 'Mikołaj', 'Adam', 'Arek', 'Robert'];
@@ -76,14 +76,14 @@ if (allNames.indexOf(newName) == -1) {
 }
 console.log(allNames);
 
-/* Zadanie 8.8 */
+/* Task 8.8 */
 console.log('ZADANIE 8.8');
 var text = "Papugi koszą trawę, unosząc się nad ziemią 15 centymetrów, na czerwonych dywanach.";
 var animal = text.replace('Papugi', 'Zielone słonie').toUpperCase();
 text = text.replace('Papugi', animal.substr(0, 14));
 console.log(text.substr(0, text.length/2));
 
-/* Zadanie 8.9 */
+/* Task 8.9 */
 console.log('ZADANIE 8.9');
 function rysujChoinke(a) {
 	var star='';
@@ -110,14 +110,10 @@ function rysujChoinke(a) {
 }
 rysujChoinke(5);
 
-/* Zadanie 8.11 */
-function checkOnclickEvent(param) {
-  	console.log(param);
-}
+/* Task 8.11 */
+var addElement = document.getElementById('js-addElement');
+var navigation = document.getElementById('js-list');
 
-var addElem = document.getElementById('js-addElem');
-var navigation = document.getElementById('Lista');
-
-addElem.addEventListener('click', function(e) {
+addElement.addEventListener('click', function(e) {
   	navigation.innerHTML += '<li>item '+navigation.getElementsByTagName('li').length+'</li>';
 });
