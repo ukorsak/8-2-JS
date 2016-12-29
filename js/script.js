@@ -85,7 +85,7 @@ console.log(text.substr(0, text.length/2));
 
 /* Task 8.9 */
 console.log('ZADANIE 8.9');
-function rysujChoinke(a) {
+function drawTree(a) {
 	var star='';
 	var b,c;
 	for(i=0;i<a;i++){
@@ -108,7 +108,7 @@ function rysujChoinke(a) {
 	}
 	console.log(star);
 }
-rysujChoinke(5);
+drawTree(5);
 
 /* Task 8.11 */
 var addElement = document.getElementById('js-addElement');
